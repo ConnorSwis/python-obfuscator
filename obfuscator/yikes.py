@@ -2,7 +2,10 @@ from math import ceil, log
 import textwrap
 
 
+# not without much inspiration from Ben Kurtovic https://benkurtovic.com/2014/06/01/obfuscating-hello-world.html
+
 def convert_to_bits(num, depth=0):
+#  Written by Ben Kurtovic
     result = ""
     while num:
         base = shift = 0
